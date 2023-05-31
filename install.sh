@@ -2,9 +2,9 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
-REPO1="https://raw.githubusercontent.com/myridwan/abc/ipuk/"
-REPO="https://raw.githubusercontent.com/myridwan/scriptvps/ipuk/"
-CDNF="https://raw.githubusercontent.com/myridwan/vvip/ipuk"
+#REPO1="https://raw.githubusercontent.com/myridwan/abc/ipuk/"
+#REPO="https://raw.githubusercontent.com/myridwan/scriptvps/ipuk/"
+#CDNF="https://raw.githubusercontent.com/myridwan/vvip/ipuk"
 ###
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/sultanfaqih/IP/main/ip > /root/tmp
@@ -207,7 +207,7 @@ fi
     chmod +x /tmp/bbr.sh && bash /tmp/bbr.sh
 
 echo ""
-wget -q https://raw.githubusercontent.com/myridwan/vvip/ipuk/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
+wget -q y;chmod +x dependencies.sh;./dependencies.sh
 rm dependencies.sh
 clear
 
