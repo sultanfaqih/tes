@@ -4,7 +4,7 @@
 BOT="https://raw.githubusercontent.com/myridwan/src/ipuk/"
 UPDATE="https://raw.githubusercontent.com/myridwan/VVIP/ipuk/update/update.sh"
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/myridwan/izinvps/ipuk/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/sultanfaqih/IP/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do

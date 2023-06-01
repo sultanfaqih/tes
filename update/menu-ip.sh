@@ -115,7 +115,7 @@ read -p "│  NEW IPVPS : " daftar
 echo -e "$COLOR1│${NC}"
 echo -e "$COLOR1│${NC}  [INFO] Checking the IPVPS!"
 sleep 1
-REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/izinvps/ipuk/ip | awk '{print $4}' | grep $daftar)
+REQIP=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/IP/main/ip | awk '{print $4}' | grep $daftar)
 if [[ $daftar = $REQIP ]]; then
 echo -e "$COLOR1│${NC}  [INFO] VPS IP Already Registered!!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
