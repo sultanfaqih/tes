@@ -238,7 +238,7 @@ echo -e "═══════════════════════�
     print_success "DomainAll"
     elif test $dom -eq 2; then
     read -rp "Enter Your Domain : " domen 
-    echo $domen > /root/domain
+    echo "$domen" > /root/domain
     echo "$domen" > /root/domain
     echo "$domen" > /root/scdomain
     echo "$domen" > /etc/xray/domain
