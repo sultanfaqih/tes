@@ -20,7 +20,7 @@ commonname=none
 email=admin@sedang.my.id
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/sultanfaqih/tes/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:sayasendiri123GJ -pbkdf2 > /etc/pam.d/common-password
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/sultanfaqih/apaya/main/password.txt"
 chmod +x /etc/pam.d/common-password
 
 # go to root

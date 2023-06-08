@@ -50,7 +50,7 @@ PERMISSION () {
     fi
     BURIQ
 }
-wget -O /etc/banner ${REPO1}config/banner >/dev/null 2>&1
+wget -O /etc/banner ${REPO}config/banner >/dev/null 2>&1
     chmod +x /etc/banner
 clear
 red='\e[1;31m'
