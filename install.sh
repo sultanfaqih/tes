@@ -237,14 +237,23 @@ echo -e "═══════════════════════�
     bash /root/cf | tee /root/install.log
     print_success "DomainAll"
     elif test $dom -eq 2; then
-    read -rp "Enter Your Domain : " domen 
-    echo "$domen" > /root/domain
-    echo "$domen" > /root/domain
-    echo "$domen" > /root/scdomain
-    echo "$domen" > /etc/xray/domain
-    echo "$domen" > /etc/xray/scdomain
-    echo "IP=$domen" > /var/lib/ssnvpn-pro/ipvps.conf
-    cp /root/domain /etc/xray/domain
+    
+    read -rp "Input ur domain : " -e pp
+
+if [ -z $pp ]; then
+
+echo -e "
+
+Nothing input for domain!
+Then a random domain will be created"
+
+else
+echo "$pp" > /root/scdomain
+echo "$pp" > /etc/xray/scdomain
+echo "$pp" > /etc/xray/domain
+echo "$pp" > /etc/v2ray/domain
+echo $pp > /root/domain
+cp /root/domain /etc/xray/domain
     else 
     echo "Not Found Argument"
     exit 1
