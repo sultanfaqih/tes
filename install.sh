@@ -235,7 +235,8 @@ echo -e "═══════════════════════�
     wget -q -O /root/cf "https://raw.githubusercontent.com/sultanfaqih/tes/main/cf" >/dev/null 2>&1
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
-    print_success "DomainAll"
+    echo "DONE"
+    sleep 3
     elif test $dom -eq 2; then
     read -rp "Enter Your Domain : " domen 
     echo $domen > /root/domain
