@@ -207,7 +207,9 @@ fi
     chmod +x /tmp/bbr.sh && bash /tmp/bbr.sh
 
 echo ""
-wget -q y;chmod +x dependencies.sh;./dependencies.sh
+wget -q y
+chmod +x dependencies.sh
+./dependencies.sh
 rm dependencies.sh
 clear
 
