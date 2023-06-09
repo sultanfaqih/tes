@@ -180,7 +180,7 @@ sleep 3
 mkdir -p /etc/ssnvpn
 mkdir -p /etc/ssnvpn/theme
 mkdir -p /var/lib/ssnvpn-pro >/dev/null 2>&1
-echo "IP=" >> /var/lib/ssnvpn-pro/ipvps.conf
+echo "IP=" >> /var/lib/ipvps.conf
 
 if [ -f "/etc/xray/domain" ]; then
 echo ""
