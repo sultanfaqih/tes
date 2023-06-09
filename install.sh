@@ -227,9 +227,9 @@ echo -e "═══════════════════════�
     echo "1. Use Domain From Script / Gunakan Domain Dari Script"
     echo "2. Choose Your Own Domain / Pilih Domain Sendiri"
     echo -e "${red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-    read -rp "Choose Your Domain Installation : " domen 
+    read -rp "Choose Your Domain Installation : " dom 
 
-    if test $domen -eq 1; then
+    if test $dom -eq 1; then
     clear
     apt install jq curl -y
     wget -q -O /root/cf "${CDNF}/cf" >/dev/null 2>&1
