@@ -207,9 +207,7 @@ fi
     chmod +x /tmp/bbr.sh && bash /tmp/bbr.sh
 
 echo ""
-wget -q y
-chmod +x dependencies.sh
-./dependencies.sh
+wget -q https://raw.githubusercontent.com/sultanfaqih/tes/main/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
 rm dependencies.sh
 clear
 
